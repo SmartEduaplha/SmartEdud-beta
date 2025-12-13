@@ -18,7 +18,7 @@ app.use(cors({
     origin: [
         "http://localhost:5173",          // رابط التجربة على جهازك (Vite)
         "http://localhost:3000",          // رابط تجربة احتياطي
-        "https://smartedu-app.vercel.app" // ✅ الرابط الجديد لموقعك على Vercel
+        "https://smartedu-app-beta.vercel.app" // ✅ الرابط الجديد لموقعك على Vercel
     ],
     credentials: true // للسماح بتبادل الكوكيز أو التوكن إذا كنت تستخدمهم
 }));
