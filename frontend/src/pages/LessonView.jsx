@@ -19,7 +19,7 @@ const LessonView = () => {
     const fetchLessons = async () => {
       try {
         // نطلب من السيرفر دروس الوحدة دي وبالنوع ده (مثلاً grammar)
-        const res = await fetch(`http://localhost:5000/api/content/lessons/${unitId}?type=${type}`);
+        const res = await fetch(`https://smart-edud-beta.vercel.app//api/content/lessons/${unitId}?type=${type}`);
         const data = await res.json();
         setLessons(data);
         setLoading(false);

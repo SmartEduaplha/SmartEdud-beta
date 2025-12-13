@@ -11,7 +11,7 @@ const CourseMap = () => {
   useEffect(() => {
     const fetchUnits = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/content/units');
+        const response = await fetch('https://smart-edud-beta.vercel.app//api/content/units');
         const data = await response.json();
         setUnits(data); // خزن البيانات اللي جت
         setLoading(false); // وقف التحميل

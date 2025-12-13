@@ -26,8 +26,8 @@ const Login = () => {
 
     // تحديد الرابط: هل هو تسجيل دخول ولا حساب جديد؟
     const endpoint = isLogin 
-      ? 'http://localhost:5000/api/auth/login' 
-      : 'http://localhost:5000/api/auth/register';
+      ? 'https://smart-edud-beta.vercel.app//api/auth/login' 
+      : 'https://smart-edud-beta.vercel.app//api/auth/register';
 
     try {
       const response = await fetch(endpoint, {
