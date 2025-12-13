@@ -25,9 +25,9 @@ const Login = () => {
     setError(''); // مسح أي خطأ قديم
 
     // تحديد الرابط: هل هو تسجيل دخول ولا حساب جديد؟
-    const endpoint = isLogin 
-      ? 'https://smart-edud-beta.vercel.app//api/auth/login' 
-      : 'https://smart-edud-beta.vercel.app//api/auth/register';
+   const endpoint = isLogin 
+  ? '/api/auth/login' 
+  : '/api/auth/register'; // تم حذف الرابط الطويل والاكتفاء بالمسار فقط
 
     try {
       const response = await fetch(endpoint, {
