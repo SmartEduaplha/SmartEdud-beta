@@ -27,6 +27,12 @@ app.get('/', (req, res) => {
     res.send("<h1>Server is Running! 🚀</h1>");
 });
 
-app.listen(PORT, () => {
+// تشغيل السيرفر محلياً أو تصديره لـ Vercel
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-});
+  });
+}
+
+module.exports = app;
